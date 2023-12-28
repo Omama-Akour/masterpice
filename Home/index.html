@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-GLhlTQ8iKu1rK+EXIl+eL9dCZegU5fFfeea0D62YgOZBsv4Zb2xY5B1abK7VI1pg" crossorigin="anonymous"> -->
+    <title> Care & Cure </title>
+    <link rel="icon" href="/img/Green_Medical_Logo-removebg-preview (1).png">
+
+</head>
+<body>
+    <!-- Header Section  -->
+   <section id="header">
+    <a href="index.html"> <img src="/img/Green_Medical_Logo-removebg-preview (1).png" class="logo" alt=""></a>
+    <div>
+        <ul id="navbar">
+            <li class="hideOnMobile"><a class="active"  href="index.html"> Home</a></li>
+            <li class="hideOnMobile" ><a href="/Medicine/med.html"> Drugs</a></li>
+            <li class="hideOnMobile"><a href="/skincare/skin.html"> Skin Care </a></li>
+            <li class="hideOnMobile"><a href="/askdr/askdr.html"> Ask Dr</a></li>
+            <li class="hideOnMobile"><a href="/contactus/contact.html"> Contact Us</a></li>
+            <li class="hideOnMobile"><a   id="loginButtonNav">  Login </a></li>
+            <li class="hideOnMobile"><a   id="signupButtonNav" > SignUp</a></li>
+            <li class="hideOnMobile" id="carticon"><a href="/cart/cart.html"><i class="fa-solid fa-cart-shopping"></i> </a></li>
+            <li class="menu-btn"  onclick = "showSidebar()"> <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" ><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a></li>
+
+        </ul>
+
+        <ul class="sidebar" >
+            <li onclick= " hideSiderbar()" ><a href=""> <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li ><a class="active"  href="index.html"> Home</a></li>
+            <li><a href="/Medicine/med.html"> Drugs</a></li>
+            <li><a href="/skincare/skin.html"> Skin Care </a></li>
+            <li ><a href="/askdr/askdr.html"> Ask Dr</a></li>
+            <li ><a href="/contactus/contact.html"> Contact Us</a></li>
+            <li  ><a  href="/login/login.html">  Login </a></li>
+            <li  ><a  href="/signup/signup.html"> SignUp</a></li>
+            <li ><a  href="/cart/cart.html"><i class="fa-solid fa-cart-shopping"></i> </a></li>
+        </ul>
+    </div>
+   </section>
+   <!-- Background Section -->
+   <section id="hero">
+    <h1> We Are The Best Pharmacy</h1>
+    <p >" Where your health is our priority, We're dedicated to providing</p>
+    <p> exceptional care and trusted pharmaceutical services to our community."
+    </p>
+    <a href="#aboutme"><button class="button"> View</button></a>
+   </section>
+
+   <!-- About Us Section -->
+    <div class="heading">
+        <h2> About Us</h2>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="/img/pharmacy.webp" >
+            </div>
+            <div class="about-content">
+                <p>We at our pharmacy are committed to providing the best healthcare to our community. With our qualified and specialized team in the field of pharmacy, we strive to deliver high-quality medications and professional medical advice. We understand the importance of our role in supporting the health and well-being of our patients, and we work diligently to meet their needs efficiently and professionally. Contact us today for personalized and exceptional healthcare service that suits your health needs. </p>
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- Categories Section -->
+
+        <section class="cards reveal fade-bottom " id="aboutme">
+            <h2> Categories </h2>
+
+            <div class="content">
+                <div class="card">
+                    <div class="icon"> 
+                        <img src="/img/mid6.jpg" alt="">
+                    </div>
+                    <div class="info"> 
+                        <h3> Drugs Section</h3>
+
+                    </div>     
+                        <a href="/Medicine/med.html"><button class="button"  > View</button></a>
+
+                </div>
+                
+                    <div class="card">
+                        <div class="icon"> 
+                            <img src="/img/skincare.webp">
+                        </div>
+                        <div class="info"> 
+                            <h3> SkinCare Section</h3>
+
+                        </div>
+                        <a href="/skincare/skin.html"><button class="button" > View</button></a>
+
+                    </div>
+            
+            
+                <div class="card">
+                    <div class="icon"> 
+                        <img src="/img/drdr.jpg" alt="">
+                    </div>
+                    <div class="info"> 
+                        <h3> Ask Dr</h3>
+                        
+                    </div>
+                    <a href="/askdr/askdr.html"><button class="button" > View</button></a>
+                </div>
+    
+            </div>
+        </section>
+
+        <!-- Device section -->
+
+        <section id="device">
+            <h2> Devices </h2>
+            <div class="big">
+           <div class="card_device">
+            <div id="device1"> 
+                <img src="/img/blood.jpg" alt="">
+            </div>
+            <div id="device2">
+                <h3> Blood Pressure Monitors</h3>
+                <li> Overview of why monitoring blood pressure is important. </li>
+                <li>Different types of blood pressure monitors available (automatic, manual, wrist monitors).  </li>
+                <li> Guidance on how to choose the right blood pressure monitor.</li>
+            </div>
+           </div>
+        </div>
+        </section>
+
+        <section id="device_second">
+            <div class="big">
+           <div class="card_device">
+           
+            <div id="device2">
+                <h3> Blood Glucose Monitors</h3>
+                <li>Explanation of the importance of monitoring blood glucose levels. </li>
+                <li >Types of blood glucose monitors (traditional meters, continuous glucose monitoring systems). </li>
+                <li>Tips on selecting the right glucose monitoring system.  </li>
+
+            </div>
+             <div id="device1"> 
+                <img src="/img/blood2.avif" alt="">
+            </div>
+           </div>
+        </div>
+        </section>
+        <section id="device_second">
+            <div class="big">
+           <div class="card_device">
+            <div id="device1"> 
+                <img src="/img/first3.avif" alt="">
+            </div>
+            <div id="device2">
+                <h3> First Aid Kits</h3>
+                <li>Importance of having a well-equipped first aid kit at home. </li>
+                <li>List of essential items in a first aid kit. </li>
+                <li>Tips on maintaining and updating the first aid kit.  </li>
+
+            </div>
+           </div>
+        </div>
+        </section>
+
+
+
+            <div class="card-container" >
+            <h2>
+                Video
+            </h2>
+                <div class="v" >
+                    <div id="player"> </div>
+                </div>
+
+            </div>
+           
+        
+        
+  <!-- Testimonials section -->
+ <section class="client_section layout_padding">
+  <h2>Testimonials</h2>
+  <div class="container px-0">
+    <div id="inner">
+
+    </div>
+      <!-- <div id="customCarousel2" class="carousel slide" data-bs-ride="carousel">
+          <div id="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="box">
+                      <div class="client_info">
+                          <div class="client_name">
+                              <h5>
+                                  Morijorch
+                              </h5>
+                          </div>
+                          <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      <p>
+                          Editors now use Lorem Ipsum as their default model text, and a search for 'lorem
+                          ipsum' will uncover many web sites still in their infancy.
+                      </p>
+                  </div>
+              </div> -->
+
+              <!-- Add more carousel items for other testimonials -->
+              <!-- <div class="carousel-item">
+                  <div class="box">
+                      <div class="client_info">
+                          <div class="client_name">
+                              <h5>Rochak</h5>
+                          </div>
+                          <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      <p>Various editors now use Lorem Ipsum as their default model text, and a search for
+                          'lorem ipsum' will uncover many web sites still in their infancy.
+                      </p>
+                  </div>
+              </div> -->
+
+              <!-- <div class="carousel-item"> -->
+                  <!-- <div class="box">
+                      <div class="client_info">
+                          <div class="client_name">
+                              <h5>Brad Johns</h5>
+                          </div>
+                          <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                      <p>Various editors now use Lorem Ipsum as their default model text, and a search for
+                          'lorem ipsum' will uncover many web sites still in their infancy.</p>
+                  </div>
+              </div>
+          </div> -->
+
+          <!-- <a class="carousel-control-prev" href="#customCarousel2" role="button" data-bs-slide="prev">
+              <i class="fa fa-angle-left" aria-hidden="true"></i>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#customCarousel2" role="button" data-bs-slide="next">
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+              <span class="sr-only">Next</span>
+          </a>
+      </div> -->
+  </div>
+</section>
+        
+        
+        
+
+
+
+
+        <footer class="section-p1 d-flex" id="footerone">
+            <div class="col">
+              <img class="logo1" src="/img/Green_Medical_Logo-removebg-preview (1).png"  alt="">
+              <h4>Contact</h4>
+              <p><Strong>Address:</Strong> 562 Wellington Road, Street 32, San Francisco</p>
+              <p><strong>Phone</strong>+01 222 365 / (+91) 01 2345 7891</p>
+              <p><strong>Hours</strong> 10:00 - 18:00, Mon - sat</p>
+              <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-youtube"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <h4>About</h4>
+              <a href="#">About Us</a>
+              <a href="#">Delivery Information</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Contact Us</a>
+            </div>
+            <div class="col">
+              <h4>My Account</h4>
+              <a href="#">SignIn</a>
+              <a href="#">View Cart</a>
+              <a href="#">My Wishlist</a>
+              <a href="#">Track My Orders</a>
+              <a href="#">Help</a>
+            </div>
+            <div class="col install">
+              <h4>Install App</h4>
+              <p>From App Store or Google Play</p>
+              <div class="row">
+                <img src="/img/app.jpg" alt="">
+                <img src="/img/play.jpg" alt="">
+              </div>
+              <p>Secured Payment Gateways</p>
+              <img src="/img/pay.png" alt="">
+            </div>
+            <div class="copyright">
+              <p>© 2023, Tech2 etc - Ecommerce Website.</p>
+            </div>
+          </footer>
+
+   <script src="script.js"></script> 
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+    /* background-color: rgb(249, 248, 248); */
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-left: 120px;
+}
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right:50px ;
+}
+#prodetails .single-pro-details {
+    width: 50%;
+    padding-top: 30px;
+}
+#prodetails .single-pro-details h4{
+    padding: 40px 0px 20px 0px;
+}
+#prodetails .single-pro-details h2{
+    font-size: 36px;
+}
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+#prodetails .single-pro-details input{
+    width: 30px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-color: #088178;
+    border-radius: 5px;
+}
+#prodetails .single-pro-details input:hover{
+    background-color: rgb(219, 0, 0);
+}
+
+#Mainimg{
+    width: 100%;
+    height: 60vh;
+}
+
+/* #prodetails .single-pro-details button{
+    background-color:#aa1e15 ;
+    color: #fff;
+    padding: 3px;
+    border: hidden;
+} */
+
+#prodetails .single-pro-details span{
+    line-height: 30px;
+}
+#cardsBtnJS{
+    color :#1a1a1a;
+    display: flex;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color:#daeeec;
+}
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom:  20px;
+}
+footer .logo {
+    height: 80px;
+    margin-bottom: 20px;
+}
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+footer a {
+    font-size: 13px;
+    text-decoration: none ;
+    color: #222;
+    margin-bottom: 10px;
+}
+footer .follow {
+    margin-top: 20px;
+}
+footer .follow i {
+color: #465b52;
+padding-right: 4px;
+cursor: pointer;
+}
+footer .install .row img {
+    border: 1px solid #088178;
+    border-radius: 7px;
+  width: 150px;
+  background-color: white;
+  margin-left: 10px;
+}
+footer .install img {
+    margin: 10px 0 15px 0;
+}
+footer .follow i:hover, footer a:hover{
+    columns:  #088178;
+}
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
+.section-p1{
+    padding: 50px ;
+}
+.icon{
+    color: #088178;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:white;
+    box-shadow: 0 5px 15px rgb(0, 0, 0 , 0.06);
+    z-index: 999;
+    
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight:600 ;
+    color: #088178;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+color: rgb(185, 0, 0);
+}
+#navbar li a.active::after,
+#navbar li a:hover::after
+{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background:rgb(185, 0, 0);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#hero{
+    
+    background-image:url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .4;
+    width: 100%;
+    height: 100vh;
+
+}
+.hero:hover{
+   opacity:1;
+}
+
+.logo{
+    width: 100%;
+    height: 100px;
+}
+.logo1{
+    width: 50%;
+    height: 100px;
+}
+
+
+.button {
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color:#088178;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #088178;
+  }
+  
+  .button:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #70bdca;
+    box-shadow: 4px 5px 17px -4pxr #088178
+  }
+  
+ .button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color:#088178;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+ .button:hover::before {
+    width: 250%;
+  }

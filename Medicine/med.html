@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Medicine Page  </title>
+    <link rel="stylesheet" href="med.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="/img/Green_Medical_Logo-removebg-preview (1).png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+</head>
+<body>
+
+
+    <section id="header">
+      <a href="/Home/index.html"> <img src="/img/Green_Medical_Logo-removebg-preview (1).png" class="logo" alt=""></a>
+      <div>
+            <ul id="navbar">
+                <li><a   href="/Home/index.html"> Home</a></li>
+                <li><a class="active"  href="medicine.html"> Drugs</a></li>
+                <li><a href="/skincare/skin.html"> Skin Care </a></li>
+                <li><a href="/askdr/askdr.html"> Ask Dr</a></li>
+                <li><a href="/contactus/contact.html"> Contact Us</a></li>
+                <li><a  id="loginButtonNav" >  Login </a></li>
+                <li><a id="signupButtonNav" > SignUp</a></li>
+                <li id="carticon"><a href="/cart/cart.html"><i class="fa-solid fa-cart-shopping"></i> </a></li>
+                
+    
+            </ul>
+        </div>
+       </section>
+
+       <section class="image">
+        <div> # Drugs</div>
+       </section>
+
+          <h2 style="text-align: center; color:#088178; margin-top: 30px;"> You Can Search Medicine You Need ! </h2>
+          <section class="filters">
+            <div class="price-filter">
+                <label for="price-range">Price Range :</label>
+                <input type="range" id="price-range" min="0" max="100" step="1" value="100">
+                <br>
+                <span id="min-price">Min Price: 0 JD</span>
+                <span id="max-price">Max Price: 50 JD</span>
+            </div>
+            <div class="price-filter">
+              <label for="price-range">You Can Search Medicine You Need :</label>
+                <input type="text" id="searchInput" placeholder="Search for Medicine...">
+            </div>
+        </section>
+    
+       
+        <section id="product1" class="section-p1">
+          <div class="pro-container" id="pro-container"></div>
+          <div id="pagination">  </div>
+        </section>
+        
+
+    
+    
+<!--     
+    <section id="product1" class="section-p1">
+      <div class="pro-container" id="pro-container">
+           
+     
+           <div class="pro">
+              <img src="" alt="">
+              <div class="des">
+                  <h5> Revanin </h5>
+                 
+                  <h4> $20</h4>
+
+              </div>
+          </div>
+
+          <div class="pro">
+              <img src="" alt="">
+              <div class="des">
+                  <h5> Pandol </h5>
+               
+                  <h4> $10</h4>
+
+              </div>
+          </div>
+
+          <div class="pro">
+              <img src="" alt="">
+              <div class="des">
+                  <h5> med  </h5>
+                
+                  <h4> $30</h4>
+
+              </div>
+          </div>
+
+          <div class="pro">
+              <img src="" alt="">
+              <div class="des">
+                  <h5>  med </h5>
+                 
+                  <h4> $70</h4>
+
+              </div>
+          </div>
+
+          <div class="pro">
+              <img src="" alt="">
+              <div class="des">
+                  <h5>  med </h5>
+               
+                  <h4> $90</h4>
+
+              </div>
+          </div>
+
+          <div class="pro">
+              <img src="" alt="">
+              <div class="des">
+                  <h5>  med </h5>
+                  
+                  <h4> $70</h4>
+
+              </div>
+          </div>
+
+          <div class="pro">
+              <img src="" alt="">
+              <div class="des">
+                  <h5>  med </h5>
+                  <h4> $40</h4>
+
+              </div>
+          </div>
+          <div class="pro">
+            <img src="" alt="">
+            <div class="des">
+                <h5> med  </h5>
+               
+                <h4> $40</h4>
+
+            </div>
+        </div>
+      </div>
+  </section>
+
+       
+ -->
+
+
+       
+
+       <footer class="section-p1 d-flex" id="footerone">
+        <div class="col">
+          <img class="logo1" src="/img/Green_Medical_Logo-removebg-preview (1).png"  alt="">
+          <h4>Contact</h4>
+          <p><Strong>Address:</Strong> 562 Wellington Road, Street 32, San Francisco</p>
+          <p><strong>Phone</strong>+01 222 365 / (+91) 01 2345 7891</p>
+          <p><strong>Hours</strong> 10:00 - 18:00, Mon - sat</p>
+          <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-solid fa-phone"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h4>About</h4>
+          <a href="#">About Us</a>
+          <a href="#">Delivery Information</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+          <h4>My Account</h4>
+          <a href="#">SignIn</a>
+          <a href="#">View Cart</a>
+          <a href="#">My Wishlist</a>
+          <a href="#">Track My Orders</a>
+          <a href="#">Help</a>
+        </div>
+        <div class="col install">
+          <h4>Install App</h4>
+          <p>From App Store or Google Play</p>
+          <div class="row">
+            <img src="/img/app.jpg" alt="">
+            <img src="/img/play.jpg" alt="">
+          </div>
+          <p>Secured Payment Gateways</p>
+          <img src="/img/pay.png" alt="">
+        </div>
+        <div class="copyright">
+          <p>© 2023, Tech2 etc - Ecommerce Website.</p>
+        </div>
+      </footer>
+    <script src="med.js"> </script>
+</body>
+</html>

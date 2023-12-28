@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="/Home/index.html"> <img src="/img/Green_Medical_Logo-removebg-preview (1).png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="/Home/index.html"> Home</a></li>
+                <li><a href="/Medicine/med.html"> Drugs</a></li>
+                <li><a href="/skincare/skin.html"> Skin Care </a></li>
+                <li><a href="/askdr/askdr.html"> Ask Dr</a></li>
+                <li><a href="/contactus/contact.html"> Contact Us</a></li>
+                <li><a  id="loginButtonNav" >  Login </a></li>
+                <li><a id="signupButtonNav" > SignUp</a></li>
+                <!-- <li><a class="active" href="/cart/cart.html"><i class="fa-solid fa-cart-shopping"></i> </a></li> -->
+    
+            </ul>
+        </div>
+       </section>
+    <div class='container'>
+        <div class='window'>
+            <div class='order-info'>
+                <div class='order-info-content'>
+                    <h2>Order Summary</h2>
+                    <div class='line'></div>
+                   
+
+
+
+<!-- 
+                    <div class='total'>
+                        <span style='float:left;'>
+                            <div class='thin dense'>order date</div>
+                            <div  class='thin dense'>TOTAL </div>
+                            
+                        </span>
+                        <span  style='float:right; text-align:right;' >
+                            <div id="vat" class='thin dense'></div>
+                            <div   id="total" class='thin dense'>0</div>
+                            
+                        </span>
+                    </div> -->
+                    <table id="tabletable">
+                        <thead>
+                            <tr>
+                                <th>Order date</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="vat" class='thin dense'></td>
+                                <td  id="total" class='thin dense'></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div> Thank you for choosing us! We hope you love your purchase! </div>
+
+                    
+                </div>
+            </div>
+            
+            
+            <div class='credit-info'>
+                <div class='credit-info-content'>
+                    <table class='half-input-table'>
+                        <tr>
+                            <td>your Enter card: </td>
+                            <td>
+                                <div class='dropdown' id='card-dropdown'>
+                                    <div class='dropdown-btn' id='current-card'>Visa</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' height='80'
+                        class='credit-card-image' id='credit-card-image'></img>
+                    Card Number
+                    <input class='input-field' type="number" id="cardNumber" oninput="validateCardNumber()" maxlength="16"
+                        required></input>
+                    <span id="digitsLeft"></span>
+                    Card Holder
+                    <input class='input-field' type="text" id="cardHolder" oninput="validateCardHolder()" required></input>
+                    <table class='half-input-table'>
+                        <tr>
+                            <td> Expires
+                                <input class='input-field' type="number" id="date" oninput="validateDate()" required></input>
+                            </td>
+                            <td>CVC
+                                <input class='input-field' type="number" id="cvc" oninput="validateCVC()" required></input>
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="validation"></div>
+                    <button class='pay-btn' onclick="validateAndConfirmCheckout()">Confirm Checkout</button>
+
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+   
+ <footer class="section-p1 d-flex" id="footerone">
+    <div class="col">
+      <img class="logo1" src="/img/Green_Medical_Logo-removebg-preview (1).png"  alt="">
+      <h4>Contact</h4>
+      <p><Strong>Address:</Strong> 562 Wellington Road, Street 32, San Francisco</p>
+      <p><strong>Phone</strong>+01 222 365 / (+91) 01 2345 7891</p>
+      <p><strong>Hours</strong> 10:00 - 18:00, Mon - sat</p>
+      <div class="follow">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-solid fa-phone"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <h4>About</h4>
+      <a href="#">About Us</a>
+      <a href="#">Delivery Information</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="#">SignIn</a>
+      <a href="#">View Cart</a>
+      <a href="#">My Wishlist</a>
+      <a href="#">Track My Orders</a>
+      <a href="#">Help</a>
+    </div>
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+        <img src="/img/app.jpg" alt="">
+        <img src="/img/play.jpg" alt="">
+      </div>
+      <p>Secured Payment Gateways</p>
+      <img src="/img/pay.png" alt="">
+    </div>
+    <div class="copyright">
+      <p>© 2023, Tech2 etc - Ecommerce Website.</p>
+    </div>
+  </footer>
+    <script src="checkout.js"></script>
+</body>
+
+</html>
